@@ -1,0 +1,22 @@
+{
+  "name": "chat-contact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "chat-auth-mw": "^1.0.2",
+    "chat-ms": "^1.1.0",
+    "chat-rp": "^1.0.2",
+    "dotenv": "^5.0.0",
+    "mongoose": "^5.0.6",
+    "mongoose-timestamp": "^0.6.0"
+  }
+}
