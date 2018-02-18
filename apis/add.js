@@ -24,6 +24,10 @@ const add = (data, headers) => {
   const username = getUsername(headers);
   const { contact } = data;
 
+  if (username === contact) {
+    return Promise.reject(new Error('INVALID_CONTACT'));
+  }
+
   return checkUsernameAndContact(username, contact)
     .then((isExist) => {
       if (isExist) {

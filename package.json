@@ -16,7 +16,7 @@
     "axios": "^0.17.1",
     "chat-auth-mw": "^1.0.2",
     "chat-ms": "^1.1.0",
-    "chat-rp": "^1.0.3",
+    "chat-rp": "^1.0.4",
     "dotenv": "^5.0.0",
     "mongoose": "^5.0.6",
     "mongoose-timestamp": "^0.6.0"
