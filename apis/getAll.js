@@ -1,7 +1,13 @@
 const ContactModel = require('../models/contact.model');
 
+const getUsername = require('../services/getUsername.service');
+
 const getAll = (headers) => {
-  return Promise.resolve('ok');
+  const username = getUsername(headers);
+
+  return ContactModel.find({
+    username
+  }, '-_id contact');
 }
 
 module.exports = getAll;

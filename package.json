@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:docker": "docker build -t registry.ongtu.com/chat-contact:latest .",
+    "push:docker": "docker push registry.ongtu.com/chat-contact:latest"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +16,7 @@
     "axios": "^0.17.1",
     "chat-auth-mw": "^1.0.2",
     "chat-ms": "^1.1.0",
-    "chat-rp": "^1.0.2",
+    "chat-rp": "^1.0.3",
     "dotenv": "^5.0.0",
     "mongoose": "^5.0.6",
     "mongoose-timestamp": "^0.6.0"
